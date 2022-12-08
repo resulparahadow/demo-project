@@ -19,6 +19,7 @@ class ArticleShowResource extends JsonResource
         $file = $this->getTempUrlOfImage();
 
         return [
+            'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
             'type' => $this->type,
